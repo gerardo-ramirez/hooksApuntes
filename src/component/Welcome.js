@@ -48,7 +48,21 @@ const Exercises = () => {
                 {data.map(exercise => {
                 return (
                     //destructurin me permite simplificar las props que tienen el mismo nombre que las del json.
+                    /*Forma Pura:
+                    <Card
+                    key={exercise.id}
+                    title={exercise.title}
+                    description={exercise.description}
+                    img={exercise.img}
+                    leftColor={exercise.leftColor}
+                    rightColor={exercise.rightColor}
+ 
+                    />
+                    */
+
                     <div><Card
+                        key={exercise.id}
+
                         {...exercise}
 
 
